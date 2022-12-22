@@ -15,7 +15,7 @@ jobs:
           python -m pip install pytest-cov
       - name: Run coverage test
         run: |
-          coverage=$(pytest --cov=autodiff tests/ | awk '/TOTAL/ {print $4}')
+          coverage=$(pytest --cov=AutoDiff-Library tests/ | awk '/TOTAL/ {print $4}')
           coverage=${coverage%\%}
           echo $coverage
           if ((coverage < 90)); then
