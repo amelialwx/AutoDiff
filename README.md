@@ -24,7 +24,7 @@ pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://
 
 ## How to Use
 
-Please take a look at our [documentation](https://github.com/amelialwx/AutoDiff/blob/main/docs/documentation.ipynb) under the "How to Use ```autodiff```" section.
+Please take a look at the [documentation](https://github.com/amelialwx/AutoDiff/blob/main/docs/documentation.ipynb) under the "How to Use ```autodiff```" section.
 
 ## Extra
 
