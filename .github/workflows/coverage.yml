@@ -13,12 +13,11 @@ jobs:
         run: |
           python -m pip install pytest 
           python -m pip install pytest-cov
+          python -m pip install numpy
       - name: Run coverage test
         run: |
-          pytest --cov=autodiff tests/
           coverage=$(pytest --cov=autodiff tests/ | awk '/TOTAL/ {print $4}')
           coverage=${coverage%\%}
-          echo $coverage
           if ((coverage < 90)); then
             exit 1
           fi
