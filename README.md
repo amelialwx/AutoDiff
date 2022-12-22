@@ -1,6 +1,6 @@
 # team24
-![test.yml](https://github.io/amelialwx/actions/workflows/test.yml/badge.svg)
-![coverage.yml](https://github.io/ameliali/actions/workflows/coverage.yml/badge.svg)
+![test.yml](https://github.com/amelialwx/AutoDiff/actions/workflows/test.yml/badge.svg)
+![coverage.yml](https://github.com/amelialwx/AutoDiff/actions/workflows/coverage.yml/badge.svg)
 
 An automatic differentiation library for my CS207 final project at Harvard University.
 
