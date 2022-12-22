@@ -1,0 +1,28 @@
+name: coverage
+on: [push]
+jobs:
+  test_coverage:
+    name: Test coverage
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v3
+        with:
+          python-version: '3.10' # let's use a recent version
+      - name: Install Python dependencies
+        run: python -m pip install pytest 
+      - name: Run coverage test
+        run: |
+          coverage=$(pytest --cov=autodiff tests/ | awk '/TOTAL/ {print $4}')
+          coverage=${coverage%\%}
+          if ((coverage < 90)); then
+            exit 1
+          fi
+      - name: Generate coverage html
+        run: cd tests && pytest --cov=autodiff --cov-report=html:htmlcov
+      - name: Clean .gitignore in coverage output
+        run: rm -f tests/htmlcov/.gitignore
+      - name: Deploy test coverage GitHub page
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: tests/htmlcov
