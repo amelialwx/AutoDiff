@@ -1,9 +1,9 @@
-# team24
-![test.yml](https://github.com/amelialwx/AutoDiff/actions/workflows/test.yml/badge.svg)
-![coverage.yml](https://github.com/amelialwx/AutoDiff/actions/workflows/coverage.yml/badge.svg)
+# An Automatic Differentiation Library
+
+![test.yml](https://github.com/amelialwx/AutoDiff-Library/actions/workflows/test.yml/badge.svg)
+![coverage.yml](https://github.com/amelialwx/AutoDiff-Library/actions/workflows/coverage.yml/badge.svg)
 
 An automatic differentiation library for my CS207 final project at Harvard University.
-
 
 ## What is autodiff?
 
