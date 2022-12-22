@@ -1,6 +1,10 @@
 # An Automatic Differentiation Library
 
+![test.yml](https://github.com/amelialwx/AutoDiff/actions/workflows/test.yml/badge.svg)
+![coverage.yml](https://github.com/amelialwx/AutoDiff/actions/workflows/coverage.yml/badge.svg)
+
 An automatic differentiation library for my CS207 final project at Harvard University.
+
 
 ## What is autodiff?
 
@@ -10,7 +14,7 @@ The library currently supports forward mode and reverse mode automatic different
 
 Forward mode is implemented using the unique properties of dual numbers. Reverse mode is implemented using reverse traversal through a computational graph.
 
-## How to Install 
+## How to Install
 
 The user can install the package using the code below
 
@@ -26,7 +30,7 @@ Please take a look at our [documentation](https://github.com/amelialwx/AutoDiff/
 
 Code coverage results can be found [here](https://amelialwx.github.io/AutoDiff/).
 
-GitHub repository can be found [here](https://github.com/amelialwx/AutoDiff).
+Package on Test PyPI can be found [here](https://test.pypi.org/project/AutoDiff-Library/1.0/).
 
 
 
