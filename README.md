@@ -5,7 +5,6 @@
 
 An automatic differentiation library for my CS207 final project at Harvard University.
 
-
 ## What is autodiff?
 
 autodiff is a package that provides users with forward-mode and reverse-mode automatic differentiation tools to compute derivatives of mathematical functions up to machine precision with high efficiency. With this software, the user can perform automatic differentiation for themselves. Our software focuses on the elementary functions of automatic differentiation for users who are more unfamiliar with the concept to utilize.

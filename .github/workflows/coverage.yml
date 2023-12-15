@@ -21,8 +21,10 @@ jobs:
           if ((coverage < 90)); then
             exit 1
           fi
-      - name: Generate coverage html
+      - name: Run coverage html
         run: cd tests && pytest --cov=autodiff --cov-report=html:htmlcov
+      - name: Generate coverage html
+        run: python .github/workflows/scripts/html_report.py
       - name: Clean .gitignore in coverage output
         run: rm -f tests/htmlcov/.gitignore
       - name: Deploy test coverage GitHub page
